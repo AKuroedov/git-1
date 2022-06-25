@@ -42,6 +42,7 @@ body{
 
 h1, h2, h3{
   margin: 0;
+  padding: 0;
   color: #000;
 }
 
@@ -53,7 +54,7 @@ li{
   float: left;
   width: var(--main-width);
   padding: 0.25in 0.25in 0.5in 0.25in;
-  font-size: 7pt;
+  font-size: 9pt;
 
 }
 
@@ -63,7 +64,7 @@ li{
   width: var(--sidebar-width);
   padding: var(--sidebar-horizontal-padding);
   background-color: #f2f2f2;
-  font-size: 8.5pt;
+  font-size: 10pt;
   height: 1.25in;
 }
 
@@ -165,9 +166,10 @@ li{
   flex: 0 0 var(--date-block-width);
   padding-top: calc(var(--row-blocks-padding-top) + 2.5pt) !important;
   padding-right: var(--decorator-horizontal-margin);
-  font-size: 7pt;
+  font-size: 8pt;
   text-align: right;
-  line-height: 1;
+  line-height: 1.25;
+  margin-top: -1px;
 }
 
 .date span{
@@ -179,7 +181,7 @@ li{
   top: 1pt;
   right: 5.5pt;
   display: block;
-  height: 10pt;
+  height: 15pt;
   content: '|';
 }
 
@@ -245,11 +247,11 @@ li{
 }
 
 .main-block:not(.concise) .details div{
-  margin: 0.18in 0 0.1in 0; 
+  margin: 0.05in 0 0.05in 0; 
 }
 
 .main-block:not(.concise) .blocks:last-child .details div{
-  margin-bottom: 0;
+  padding: 0.05in 0 0.05in 0;
 }
 
 .main-block.concise .details div:not(.concise){
@@ -265,6 +267,7 @@ li{
 
 .details .location{
   float: right;
+  margin-top: -17px;
 }
 
 .details div{
